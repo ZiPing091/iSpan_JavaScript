@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="myClass">問世間，</p>
+    <p class="myClass">情是何物，</p>
+    <p class="myClass">直教生死相許。</p>
+
+    <script>
+        let p = document.querySelectorAll('p');
+        // p.style.backgroundColor = '#7878ff';
+        p[0].style.backgroundColor = '#ff0000';
+        p[1].innerHTML = '<span style="color: #00ff00">...情是何物，...</span>';
+        p[2].style.lineHeight = '24px';
+        p[2].style.color = "#ffffff";
+        p[2].style.backgroundColor = "#0000ff";
+    </script>
+</body>
+
+</html>

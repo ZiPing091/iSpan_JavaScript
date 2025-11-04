@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj = {
+            fname: 'Darren',
+            lname: 'Yang',
+            age: null,
+            lineId: 'telunyang'
+        };
+        // attr: Object的 key
+        for (let attr in obj) {
+            console.log(attr, obj[attr]);
+        }
+
+        // Object.keys() 讀取key; Object.values() 讀取values
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

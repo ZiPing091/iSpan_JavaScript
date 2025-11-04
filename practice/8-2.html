@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let listOfName = ['Alex', 'Bill', 'Cook', 'Darren'];
+
+        listOfName[4] = 'Ellen';
+        console.log(listOfName);
+
+        listOfName.push('Fox', 'Gina');
+        console.log(listOfName);
+
+        listOfName[0] = 'Allen';
+        listOfName[2] = 'Carl';
+        console.log(listOfName);
+
+        // 移除末項 Gina
+        listOfName.pop();
+        console.log(listOfName);
+
+        // 移除末項 Fox，放到 name
+        let name = listOfName.pop();
+        console.log(listOfName);
+        console.log(name)
+
+        // 移除首項 .shift()
+        listOfName.shift();
+        console.log(listOfName);
+
+        name = listOfName.shift();
+        console.log(listOfName);
+
+        // 移除末項Ellen，存在name，再插入首項
+        name = listOfName.pop();
+        listOfName.unshift(name)
+        console.log(listOfName);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
