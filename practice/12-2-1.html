@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let strBrowser = "";
+        let strUsrAg = window.navigator.userAgent;
+        document.write(strUsrAg);
+        document.write("<hr />");
+
+        if (strUsrAg.indexOf("Mobile") > -1) {
+            strBrowser = "手機瀏覽器";
+        } else {
+            strBrowser = '桌機版瀏覽器';
+        }
+        document.write("正在使用" + strBrowser);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

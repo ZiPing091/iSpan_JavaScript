@@ -34,9 +34,18 @@
         name = listOfName.shift();
         console.log(listOfName);
 
-        // 移除末項Ellen，存在name，再插入首項
+        // 移除末項Ellen，存在name，再 插入首項.unshift()
         name = listOfName.pop();
         listOfName.unshift(name)
+        console.log(listOfName);
+
+        // 指定索引為 0 的地方，在刪除資料數量為 0 的情況下(不刪除資料)，新增 "Alex"
+        listOfName.splice(0, 0, 'Alex');
+        console.log(listOfName);
+
+        // 從index 1開始，移除2個value，並插入"Bill", "Cook"
+        let arrRemoveValue = listOfName.splice(1, 2, "Bill", "Cook");
+        console.log(`${arrRemoveValue} is removed.`);
         console.log(listOfName);
 
     </script>

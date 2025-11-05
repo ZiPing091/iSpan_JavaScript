@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 物件導向
+        let Person = function (name, gender, age) {
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+            this.getAge = function () {
+                return this.age;
+            }
+        }
+        let person1 = new Person('Alice', 'female', 22);
+        let person2 = new Person('Bill', 'male', 18);
+
+        console.log(person1.name);
+        console.log(person2.name);
+
+        console.log(person1.getAge());
+        console.log(person2.getAge());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arrMeal = ['麥當勞', '肯德基', '摩斯漢堡', '頂呱呱', '漢堡王'];
+        let Meal = Math.floor(arrMeal.length * Math.random());
+        document.write(`可以選擇的餐廳有: <br />`);
+        for (let i = 0; i < arrMeal.length; i++) {
+            document.write("●" + arrMeal[i] + '<br />');
+        }
+        document.write(`選擇 ${arrMeal[Meal]}`);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
