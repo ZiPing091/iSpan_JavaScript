@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d0 {
+            width: 1200px;
+            border: 1px red dotted;
+            margin: 0 auto;
+        }
+
+        #d1 {
+            background-color: cyan;
+            width: 200px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d0">
+        <div id="d1">000</div>
+    </div>
+    <button onmousemove="start()" onmouseout="stop()" id="ss">start/stop</button>
+    <script>
+        let lmargin = 0;
+        let count = 0;
+        let timer;
+        leftmargin = parseInt(window.getComputedStyle(document.getElementById("d1").marginLeft));
+        let inndiv = document.querySelector("div#d1");
+
+        function start() {
+            while (leftmargin < 1000) {
+                timer = setInterval(function () {
+
+                    lmargin += 200;
+                    inndiv.style.marginLeft = lmargin + 'px';
+                }, 1000);
+            };
+
+        }
+    </script>
+</body>
+
+</html>
