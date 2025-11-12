@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="num"></div> -->
+    <script>
+        function pri_num(max_pri_num) {
+
+            let pri_num_set = [];
+            for (let i = 1; i <= max_pri_num; i++) {
+                let pri_cnt = 0;
+                if (i == max_pri_num) {
+                    pri_num_set.push(i);
+                }
+                // console.log(i);
+                // console.log(pri_num_set);
+                if (max_pri_num % i == 0) {
+                    pri_cnt++
+                    if (pri_cnt > 2) {
+                        break
+                    } else {
+                        continue
+                    }
+                }
+
+            }
+            return pri_num_set;
+        }
+        console.log(pri_num(10));
+    </script>
+</body>
+
+</html>
