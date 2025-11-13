@@ -11,28 +11,25 @@
     <!-- <div id="num"></div> -->
     <script>
         function pri_num(max_pri_num) {
-
             let pri_num_set = [];
-            for (let i = 1; i <= max_pri_num; i++) {
+            for (let i = 2; i <= max_pri_num; i++) {
                 let pri_cnt = 0;
-                if (i == max_pri_num) {
-                    pri_num_set.push(i);
-                }
-                // console.log(i);
-                // console.log(pri_num_set);
-                if (max_pri_num % i == 0) {
-                    pri_cnt++
-                    if (pri_cnt > 2) {
-                        break
-                    } else {
-                        continue
+                for (let j = 1; j <= i; j++) {
+
+                    if (i % j == 0) {
+                        pri_cnt++;
+                        if (pri_cnt > 2) {
+                            break
+                        }
+                    }
+                    if (j == i) {
+                        pri_num_set.push(j);
                     }
                 }
-
             }
             return pri_num_set;
         }
-        console.log(pri_num(10));
+        console.log(pri_num(100));
     </script>
 </body>
 
